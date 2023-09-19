@@ -18,10 +18,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="style.css">
+<style>
+  .overlay-black{
+    position: absolute;
+    top: 0; left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index:1;
+    background-color:black;
+    animation-name:fadeIn;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+</style>
 </head>
 
 
-<body>
+<body class="overlay-black">
 
 <!--To adjust hero image and text, find hero-image class on style.css-->
 <div class="hero-image" style="background-image: url(hey\ you.jpg)">
@@ -30,7 +53,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Uj4u4aB-ElE?si=w8a6TlCGBz2Z5gRj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       <h2>You're finally <a class="hiddenLink" href="chap4.html">awake.</a></h2>
       <class="buttonbox">
-        <a href="end3.html" class="button" aria-label="">Seriously?</a>
+        <a href="end4.html" class="button" aria-label="">Seriously?</a>
      
   </div>
 </div>
